@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин спортивного питания</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+        header {
+            background-color: #ff0000;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #990000;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            cursor: pointer;
+        }
+        section {
+            padding: 20px;
+            display: none;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .product-image {
+            display: block;
+            margin: 0 auto;
+            max-width: 300px;
+            padding: 20px;
+        }
+    </style>
+    <script>
+        function showContent(sectionId) {
+            var section = document.getElementById(sectionId);
+            if (section.style.display === "none") {
+                section.style.display = "block";
+            } else {
+                section.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Магазин спортивного питания</h1>
+    </header>
+    <nav>
+        <a onclick="showContent('protein')">Протеин</a>
+        <a onclick="showContent('gainers')">Гейнеры</a>
+        <a onclick="showContent('amino')">Аминокислоты</a>
+        <a onclick="showContent('vitamins')">Витамины</a>
+    </nav>
+    <section id="protein">
+        <h2>Протеин</h2>
+        <p>Протеин является важным компонентом спортивного питания. Он помогает восстанавливать и наращивать мышечную массу.</p>
+        <img class="product-image" src="https://yapx.ru/posts/F3rv" alt=https://yapx.ru/posts/F3rv>
+    </section>
+    <section id="gainers">
+        <h2>Гейнеры</h2>
+        <p>Гейнеры — это специальные добавки, которые помогают набрать массу.</p>
+    </section>
+    <section id="amino">
+        <h2>Аминокислоты</h2>
+        <p>Аминокислоты — это строительные блоки белка. Они важны для роста и восстановления мышц.</p>
+    </section>
+    <section id="vitamins">
+        <h2>Витамины</h2>
+        <p>Витамины помогают поддерживать здоровье и общее благополучие.</p>
+    </section>
+    <footer>
+        <p>© 2024 Магазин спортивного питания. Все права защищены.</p>
+    </footer>
+</body>
+</html>
